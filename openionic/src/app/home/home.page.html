@@ -1,0 +1,83 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<!--  <ion-item>-->
+<!--    <ion-label position="floating">Votre nom</ion-label>-->
+<!--    <ion-input clear-input type="text"></ion-input>-->
+<!--  </ion-item>-->
+<!--  <ion-item>-->
+<!--    <ion-label position="floating">Votre prenom</ion-label>-->
+<!--    <ion-input clear-input type="text"></ion-input>-->
+<!--  </ion-item>-->
+
+<!--&lt;!&ndash;  <ion-button>Trouver</ion-button>&ndash;&gt;-->
+<!--&lt;!&ndash;  <ion-button color="danger">Non trouver</ion-button>&ndash;&gt;-->
+<!--&lt;!&ndash;  <ion-button shape="round">New shape</ion-button>&ndash;&gt;-->
+<!--&lt;!&ndash;  <ion-button expand="block">New block</ion-button>&ndash;&gt;-->
+<!--&lt;!&ndash;  <ion-button color="danger" fill="clear">Trouve</ion-button>&ndash;&gt;-->
+<!--&lt;!&ndash;  <ion-button size="small">small</ion-button>&ndash;&gt;-->
+<!--&lt;!&ndash;  <ion-button shape="round" fill="outline" expand="block">&ndash;&gt;-->
+<!--&lt;!&ndash;    <ion-icon slot="icon-only" name="search-outline"></ion-icon>&ndash;&gt;-->
+<!--&lt;!&ndash;  </ion-button>&ndash;&gt;-->
+<!--    <ion-list>-->
+<!--      <ion-item-sliding>-->
+<!--        <ion-item>-->
+<!--          <ion-thumbnail slot="start">-->
+<!--            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Dakar_-_Panorama_urbain.jpg" />-->
+<!--          </ion-thumbnail>-->
+<!--            <ion-label>-->
+<!--              <h2>Senegal</h2>-->
+<!--              <p3>Dakar</p3>-->
+<!--              <p>C'est la capitale du Senegal</p>-->
+<!--            </ion-label>-->
+<!--          </ion-item>-->
+<!--          <ion-item-options side="start">-->
+<!--            <ion-item-option>-->
+<!--              <ion-icon slot="start" name="add"></ion-icon>-->
+<!--            </ion-item-option>-->
+<!--          </ion-item-options>-->
+<!--        <ion-item-options side="end">-->
+<!--          <ion-item-option color="danger">-->
+<!--            <ion-icon slot="start" name="trash"></ion-icon>-->
+<!--          </ion-item-option>-->
+<!--        </ion-item-options>-->
+<!--      </ion-item-sliding>-->
+<!--        <ion-item>Guinee</ion-item>-->
+<!--        <ion-item>Mali</ion-item>-->
+<!--  <ion-button color="danger" shape="round" fill="outline" expand="block">-->
+<!--    <ion-icon slot="start" name="search-outline"></ion-icon>-->
+<!--    Trouver</ion-button>-->
+<!--    </ion-list>-->
+  <ion-button (click)="goToTeam()" expand="block">Go Team</ion-button>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Senegal</ion-card-title>
+      <ion-card-subtitle>Dakar</ion-card-subtitle>
+    </ion-card-header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Dakar_-_Panorama_urbain.jpg" />
+    <ion-card-content>
+      Le Sénégal, en forme longue la république du Sénégal, est un État d'Afrique de l'Ouest. Il est bordé par l'océan Atlantique à l'ouest, la Mauritanie au ...
+    </ion-card-content>
+    <ion-button (click)="onEdit()">Edit</ion-button>
+    <ion-button (click)="onDelete()" shape="round" color="danger">Delete</ion-button>
+    <ion-button (click)="onLetter()">Letter</ion-button>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size-sm="6" size-xs="12">Lorem ipsum dolor sit, amet consecteur adipling elit vgdjbcnxjkfjkknqjnkdncjkjknsdnkf</ion-col>
+      <ion-col size="3">Lorem ipsum dolor sit, amet</ion-col>
+      <ion-col size="3">Lorem ipsum dolor sit, amet </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
